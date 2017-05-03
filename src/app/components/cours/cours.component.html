@@ -1,0 +1,21 @@
+<h1>coucou les cours</h1>
+
+
+<ul *ngFor= "let cours of listeCours" >
+    <li> <b>Cours</b></li>
+    <li style="list-style: none;"> {{cours.nom }}</li>
+    <li style="list-style: none;">{{cours.libelleEtablissement}}</li>
+    <li style="list-style: none;">{{cours.langage}}</li>
+    <li style="list-style: none;">{{cours.jours}}</li>
+    <li style="list-style: none;">{{cours.level}}</li>
+    <li style="list-style: none;">{{cours.description}}</li>
+    <li style="list-style: none;">{{cours.evaluation}}</li>
+</ul>
+
+<!--
+<button md-fab><md-icon>check</md-icon></button>
+<button md-mini-fab><md-icon>check</md-icon></button>
+-->
+
+<p *ngIf="erreurHttp"> le subscribe a échoué mec. </p>
+<p *ngIf="!erreurHttp"> le subscribe a réussi dude. </p>

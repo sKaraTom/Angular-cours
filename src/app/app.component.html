@@ -1,0 +1,26 @@
+<h1>Hello {{name}}</h1>
+
+<!--
+<ul>
+    <li *ngFor= "let mot of listeMot" >
+        <div *ngIf= "mot=='mot1'; else elseBlock"> {{mot }}</div>
+      <ng-template #elseBlock>Alternate text while primary text is hidden</ng-template></li>
+</ul>
+
+
+<ul *ngFor= "let cours of courses" >
+    <li> <b>Cours</b></li>
+    <li style="list-style: none;"> {{cours.nom }}</li>
+    <li style="list-style: none;">{{cours.libelleEtablissement}}</li>
+    <li style="list-style: none;">{{cours.langage}}</li>
+    <li style="list-style: none;">{{cours.jours}}</li>
+    <li style="list-style: none;">{{cours.level}}</li>
+    <li style="list-style: none;">{{cours.description}}</li>
+    <li style="list-style: none;">{{cours.evaluation}}</li>
+</ul>
+-->
+<button (click)="toggle()">afficher</button>
+
+ <div *ngIf="estAffiche">
+<cours-liste></cours-liste>
+</div>
